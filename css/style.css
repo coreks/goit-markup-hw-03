@@ -166,6 +166,8 @@ footer {
 }
 
 .hero {
+  margin: 0 auto;
+  justify-content: center;
   background-color: var(--grey-back);
   text-align: center;
   max-width: 1600px;
@@ -327,11 +329,12 @@ footer {
 }
 
 .footer {
+  max-width: 1600px;
+  background-position: center;
   background-color: var(--grey-back);
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .logo-link {
@@ -349,10 +352,6 @@ footer {
   color: var(--white-first);
 }
 
-.footer-contacts {
-  margin: 0;
-}
-
 .address > .footer-contacts > li {
   display: inherit;
   margin-bottom: 9px;
@@ -366,7 +365,6 @@ footer {
 
 /* Портфолио */
 
-/* .cards{} */
 .cards {
   padding-top: 94px;
   padding-bottom: 94px;
