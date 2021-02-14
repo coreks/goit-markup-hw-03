@@ -54,8 +54,15 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid tomato; */
+  /* outline: 2px solid tomato; */
 }
+
+/* header,
+section,
+footer {
+  background-color: yellow;
+  outline: 2px solid blueviolet;
+} */
 
 .link :focus,
 .link :hover,
@@ -157,17 +164,20 @@ a {
 
 .hero {
   background-color: var(--grey-back);
-  margin-bottom: 94px;
   text-align: center;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  margin: 0 auto;
+  width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-first);
@@ -185,13 +195,12 @@ a {
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
-  /* text-align: center; */
   letter-spacing: 0.06em;
 }
 
 .skills {
-  margin-top: 0;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 106px;
 }
 
 .skills-item > li + li {
@@ -231,8 +240,9 @@ a {
 }
 
 .activity {
-  margin-top: 0;
-  margin-bottom: 82px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 82px;
 }
 
 .activity-title {
@@ -258,13 +268,14 @@ a {
   margin-left: 30px;
 }
 
-/* .team {} */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .team-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -274,8 +285,6 @@ a {
 }
 
 .team-item {
-  /* margin-top: 0;
-  margin-bottom: 0; */
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -320,7 +329,6 @@ a {
 
 .address-house {
   display: inherit;
-  margin-top: 0;
   margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
@@ -330,13 +338,11 @@ a {
 }
 
 .footer-contacts {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .address > .footer-contacts > li {
   display: inherit;
-  margin-top: 0;
   margin-bottom: 9px;
   padding-left: 0;
   font-weight: 400;
@@ -350,15 +356,18 @@ a {
 
 /* .cards{} */
 .cards {
-  margin-top: 0;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .btn-item {
-  margin-top: 94px;
-  margin-bottom: 34px;
   display: flex;
   text-align: center;
+  justify-content: center;
+}
+
+.btn-item > li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .btn-item > li > button {
