@@ -5,6 +5,8 @@
   --grey-first: rgba(117, 117, 117, 1);
   --grey-text-op60: rgba(255, 255, 255, 0.6);
   --grey-back: rgba(47, 48, 58, 1);
+  --grey-line: rgba(236, 236, 236, 1);
+  --grey-line-second: rgba(238, 238, 238, 1);
   --white-first: rgba(255, 255, 255, 1);
   --white-second: rgba(245, 244, 250, 1);
 }
@@ -79,6 +81,7 @@ footer {
 
 .header {
   background-color: var(--white-first);
+  border-bottom: 1px solid var(--grey-line);
 }
 
 .main-nav {
@@ -374,6 +377,8 @@ footer {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .btn-item > li:not(:last-child) {
@@ -416,7 +421,7 @@ footer {
 }
 
 .item-title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -424,13 +429,9 @@ footer {
   letter-spacing: 0.06em;
 }
 
-.team-item {
-  padding-bottom: 94px;
-}
-
 .item-text {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -449,4 +450,18 @@ footer {
   width: 370px;
   flex-basis: calc(100% / 9 - 30px);
   margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.cards-item > .item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.cards-item > .item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.card-item {
+  padding: 20px 24px;
+  border: 1px solid var(--grey-line-second);
 }
